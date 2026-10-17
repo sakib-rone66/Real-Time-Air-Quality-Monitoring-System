@@ -1,6 +1,6 @@
-#define BLYNK_TEMPLATE_ID "TMPL6XkdOYF7A"
-#define BLYNK_TEMPLATE_NAME "Weather Monitoring"
-#define BLYNK_AUTH_TOKEN "QqvVLgfpY3wQMJPOLQ-rmypq4hZfjP9d"
+#define BLYNK_TEMPLATE_ID "YOUR_BLYNK_TEMPLATE_ID"
+#define BLYNK_TEMPLATE_NAME "YOUR_BLYNK_TEMPLATE_NAME"
+#define BLYNK_AUTH_TOKEN "YOUR_BLYNK_AUTH_TOKEN"
 
 #define BLYNK_PRINT Serial
 #include <WiFi.h>
@@ -54,8 +54,8 @@ int Filter(int m) {
 LiquidCrystal_I2C lcd(0x27, 20, 4);
 DHT dht(DHTPIN, DHTTYPE);
 char auth[] = BLYNK_AUTH_TOKEN;
-char ssid[] = "Sabbir"; // your WiFi name
-char pass[] = "19122918"; // your WiFi password
+char ssid[] = "YOUR_WIFI_SSID";  // your WiFi name
+char pass[] = "YOUR_WIFI_PASSWORD";  // your WiFi password
 
 // Wind sensor variables
 const byte PulsesPerRevolution = 2; // Number of pulses per revolution
